@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1PXg30S8hlyjNXcl+MHiCJqUEL2O10BLXoTEl8ga0ME=",
+  "Source": "webService",
+  "BasePath": "_content/webService",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
