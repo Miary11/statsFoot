@@ -151,6 +151,30 @@ INSERT INTO StatsEquipeGeneral VALUES ('E30',12,12.5,25,1,59,87.8,10,6.71,'CAT2'
 INSERT INTO StatsEquipeGeneral VALUES ('E29',9,11.2,14,1,37.8,74.7,18.7,6.70,'CAT2');
 INSERT INTO StatsEquipeGeneral VALUES ('E17',14,16,17,0,54.9,83.6,11,6.70,'CAT2');
 
+create or replace view statsEquipeGeneralDomicile as (select Equipe.nom as equipe,Ligue.nom as ligue,buts,tirMatch,cartonJaune,cartonRouge,possession,passesReussies,aerienGagnes,note
+	from StatsEquipeGeneral
+	join Equipe on StatsEquipeGeneral.idEquipe = Equipe.idEquipe
+	join Ligue on Equipe.idLigue = Ligue.idLigue
+	where idCategorie = 'CAT1' 
+	order by note desc
+);
+
+create or replace view statsEquipeGeneralExterieur as (select Equipe.nom as equipe,Ligue.nom as ligue,buts,tirMatch,cartonJaune,cartonRouge,possession,passesReussies,aerienGagnes,note
+	from StatsEquipeGeneral
+	join Equipe on StatsEquipeGeneral.idEquipe = Equipe.idEquipe
+	join Ligue on Equipe.idLigue = Ligue.idLigue
+	where idCategorie = 'CAT2' 
+	order by note desc
+);
+
+create or replace view statsEquipeGeneralGeneral as (select Equipe.nom as equipe,Ligue.nom as ligue,sum(buts) as buts,avg(tirMatch) as tirMatch,sum(cartonJaune) as cartonJaune,sum(cartonRouge) as cartonRouge,avg(possession) as possession,avg(passesReussies) as passesReussies,avg(aerienGagnes) as aerienGagnes,avg(note) as note
+	from StatsEquipeGeneral
+	join Equipe on StatsEquipeGeneral.idEquipe = Equipe.idEquipe
+	join Ligue on Equipe.idLigue = Ligue.idLigue
+	group by Equipe.nom,Ligue.nom 
+	order by avg(note) desc limit 20
+);
+
 CREATE TABLE StatsEquipeDefense(
 	idEquipe varchar(10),
 	tirMatch numeric,
@@ -206,6 +230,30 @@ INSERT INTO StatsEquipeDefense VALUES ('E38',13.2,19,11.4,13.8,1.2,6.33,'CAT2');
 INSERT INTO StatsEquipeDefense VALUES ('E44',15.1,19,9.6,12.3,2,6.47,'CAT2');
 INSERT INTO StatsEquipeDefense VALUES ('E46',19.5,19,9.2,12.5,1.2,6.39,'CAT2');
 
+create or replace view statsEquipeDefenseDomicile as (select Equipe.nom as equipe,Ligue.nom as ligue,tirMatch,tacleMatch,interceptionMatch,fauteMatch,horsJeuxMatch,note
+	from StatsEquipeDefense
+	join Equipe on StatsEquipeDefense.idEquipe = Equipe.idEquipe
+	join Ligue on Equipe.idLigue = Ligue.idLigue
+	where idCategorie = 'CAT1' 
+	order by tacleMatch desc
+);
+
+create or replace view statsEquipeDefenseExterieur as (select Equipe.nom as equipe,Ligue.nom as ligue,tirMatch,tacleMatch,interceptionMatch,fauteMatch,horsJeuxMatch,note
+	from StatsEquipeDefense
+	join Equipe on StatsEquipeDefense.idEquipe = Equipe.idEquipe
+	join Ligue on Equipe.idLigue = Ligue.idLigue
+	where idCategorie = 'CAT2' 
+	order by tacleMatch desc
+);
+
+create or replace view statsEquipeDefenseGeneral as (select Equipe.nom as equipe,Ligue.nom as ligue,avg(tirMatch) as tirMatch,avg(tacleMatch) as tacleMatch,avg(interceptionMatch) as interceptionMatch,avg(fauteMatch) as fauteMatch,avg(horsJeuxMatch) as horsJeuxMatch,avg(note) as note
+	from StatsEquipeDefense
+	join Equipe on StatsEquipeDefense.idEquipe = Equipe.idEquipe
+	join Ligue on Equipe.idLigue = Ligue.idLigue
+	group by Equipe.nom,Ligue.nom 
+	order by avg(tacleMatch) desc limit 20
+);
+
 CREATE TABLE StatsEquipeAttaque(
 	idEquipe varchar(10),
 	tirMatch numeric,
@@ -259,3 +307,27 @@ INSERT INTO StatsEquipeAttaque VALUES ('E47',11.8,3.6,9.8,13.4,6.54,'CAT2');
 INSERT INTO StatsEquipeAttaque VALUES ('E35',9.6,3.7,9.7,12.7,6.5,'CAT2');
 INSERT INTO StatsEquipeAttaque VALUES ('E58',9.4,3.1,9.7,14.9,6.3,'CAT2');
 INSERT INTO StatsEquipeAttaque VALUES ('E11',10.5,4.8,9.7,11.8,6.83,'CAT2');
+
+create or replace view statsEquipeAttaqueDomicile as (select Equipe.nom as equipe,Ligue.nom as ligue,tirMatch,tirCadreMatch,dribbleMatch,fauteSubieMatch,note
+	from StatsEquipeAttaque
+	join Equipe on StatsEquipeAttaque.idEquipe = Equipe.idEquipe
+	join Ligue on Equipe.idLigue = Ligue.idLigue
+	where idCategorie = 'CAT1' 
+	order by dribbleMatch desc
+); 
+
+create or replace view statsEquipeAttaqueExterieur as (select Equipe.nom as equipe,Ligue.nom as ligue,tirMatch,tirCadreMatch,dribbleMatch,fauteSubieMatch,note
+	from StatsEquipeAttaque
+	join Equipe on StatsEquipeAttaque.idEquipe = Equipe.idEquipe
+	join Ligue on Equipe.idLigue = Ligue.idLigue
+	where idCategorie = 'CAT2' 
+	order by dribbleMatch desc
+); 
+
+create or replace view statsEquipeAttaqueGeneral as (select Equipe.nom as equipe,Ligue.nom as ligue,avg(tirMatch) as tirMatch,avg(tirCadreMatch) as tirCadreMatch,avg(dribbleMatch) as dribbleMatch,avg(fauteSubieMatch) as fauteSubieMatch,avg(note) as note
+	from StatsEquipeAttaque
+	join Equipe on StatsEquipeAttaque.idEquipe = Equipe.idEquipe
+	join Ligue on Equipe.idLigue = Ligue.idLigue
+	group by Equipe.nom,Ligue.nom 
+	order by avg(dribbleMatch) desc limit 20
+); 
