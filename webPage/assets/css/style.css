@@ -1,0 +1,190 @@
+body{
+	background-color: black;
+	color: white;
+	font-family: Newake;
+}
+
+header{
+	height: 140px;
+	border: 0.1px solid white;
+	margin-left: -1%;
+	margin-right: -1%;
+	margin-top: -1%;
+	text-align: center;
+}
+
+header img{
+	height: 80px;
+	margin-top: 2%;
+}
+
+main{
+	text-align: center;
+}
+
+main h1{
+	margin-top: 4%;
+}
+
+.Actions{
+	border: 0.5px solid white;
+	height: 130px;
+	width: 420px;
+	margin-left: 34%;
+	padding: 20px 20px 20px 20px;
+}
+
+.Actions button{
+	border: 1px solid white;
+	padding: 4px 4px 4px 4px;
+	width: 100px;
+	background-color: transparent;
+	color: white;
+}
+
+.Actions button:hover{
+	background-color: white;
+	color: black;
+	transition: 0.1s;
+}
+
+.hidden{
+  display: none;
+}
+
+.Results{
+	border: 0.1px solid white;
+	margin-left: -1%;
+	margin-right: -1%;
+	margin-top: 3%;
+	padding: 8px 8px 8px 8px;
+	padding-bottom: 3%;
+}
+
+.Results table{
+	border: 0.5px solid white;
+	margin-left: 5%;
+}
+
+.Results table tr{
+	border-color: 0.1px solid white;
+}
+
+.Results table tr th{
+	padding: 4px 4px 4px 4px;
+	width: 120px;
+}
+
+.Results table tr td{
+	width: 120px;
+	padding: 4px 4px 4px 4px;
+}
+
+.Actions2{
+	margin-top: 3%;
+	border: 0.5px solid white;
+	height: 130px;
+	width: 420px;
+	margin-left: 34%;
+	padding: 20px 20px 20px 20px;
+}
+
+.Actions2 button{
+	border: 1px solid white;
+	padding: 4px 4px 4px 4px;
+	width: 100px;
+	background-color: transparent;
+	color: white;
+}
+
+.Actions2 button:hover{
+	background-color: white;
+	color: black;
+	transition: 0.1s;
+}
+
+.Results2{
+	border: 0.1px solid white;
+	margin-left: -1%;
+	margin-right: -1%;
+	margin-top: 3%;
+	padding: 8px 8px 8px 8px;
+	padding-bottom: 3%;
+}
+
+.Results2 table{
+	border: 0.5px solid white;
+	margin-left: 13%;
+}
+
+.Results2 table tr{
+	border-color: 0.1px solid white;
+}
+
+.Results2 table tr th{
+	padding: 4px 4px 4px 4px;
+	width: 120px;
+}
+
+.Results2 table tr td{
+	width: 120px;
+}
+
+.Actions3{
+	margin-top: 3%;
+	border: 0.5px solid white;
+	height: 130px;
+	width: 420px;
+	margin-left: 34%;
+	padding: 20px 20px 20px 20px;
+}
+
+.Actions3 button{
+	border: 1px solid white;
+	padding: 4px 4px 4px 4px;
+	width: 100px;
+	background-color: transparent;
+	color: white;
+}
+
+.Actions3 button:hover{
+	background-color: white;
+	color: black;
+	transition: 0.1s;
+}
+
+.Results3{
+	border: 0.1px solid white;
+	margin-left: -1%;
+	margin-right: -1%;
+	margin-top: 3%;
+	padding: 8px 8px 8px 8px;
+	padding-bottom: 3%;
+}
+
+.Results3 table{
+	border: 0.5px solid white;
+	margin-left: 18%;
+}
+
+.Results3 table tr{
+	border-color: 0.1px solid white;
+}
+
+.Results3 table tr th{
+	padding: 4px 4px 4px 4px;
+	width: 120px;
+}
+
+.Results3 table tr td{
+	width: 120px;
+}
+
+footer{
+	border: 0.5px solid white;
+	text-align: center;
+	margin-left: -1%;
+	margin-right: -1%;
+	height: 80px;
+	margin-top: 4%;
+}

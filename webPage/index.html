@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stats Sheet - Welcome</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" href="assets/img/SVG/Icon.svg">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome-5/css/all.css">
+	<script type="text/javascript" src="assets/js/Function.js"></script>
+</head>
+<body>
+	<header>
+		<img src="assets/img/SVG/Logo.svg">
+	</header>
+	<main>
+		<h1>Welcome on Stats Sheet</h1>
+		<div class="Actions">
+			<h1>View the general stats</h1>
+			<div>
+				<button onclick="showGenTable('http://localhost:5179/WeatherForecast/statsGeneral','genTable')">General Stats</button>
+				<button onclick="showGenTable('http://localhost:5179/WeatherForecast/statsGeneralDomicile','homeTable')">Home Stats</button>
+				<button onclick="showGenTable('http://localhost:5179/WeatherForecast/statsGeneralExterieur','awayTable')">Away Stats</button>
+			</div>
+		</div>
+		<div class="Results">
+			<div id="genTable" class="hidden">
+				<h2>General Stats</h2>
+				<table>
+					<tr>
+						<th>Team</th>
+						<th>League</th>
+						<th>Goals</th>
+						<th>Shoots conceded</th>
+						<th>Yellow Cards</th>
+						<th>Red Cards</th>
+						<th>Possession %</th>
+						<th>Achieved Passes %</th>
+						<th>Aerial Duel Won</th>
+						<th>Rating</th>
+					</tr>
+				</table>
+			</div>
+			<div id="homeTable" class="hidden">
+				<h2>Home Stats</h2>
+				<table>
+					<tr>
+						<th>Team</th>
+						<th>League</th>
+						<th>Goals</th>
+						<th>Shoots conceded</th>
+						<th>Yellow Cards</th>
+						<th>Red Cards</th>
+						<th>Possession %</th>
+						<th>Achieved Passes %</th>
+						<th>Aerial Duel Won</th>
+						<th>Rating</th>
+					</tr>
+				</table>
+			</div>
+			<div id="awayTable" class="hidden">
+				<h2>Away Stats</h2>
+				<table>
+					<tr>
+						<th>Team</th>
+						<th>League</th>
+						<th>Goals</th>
+						<th>Shoots conceded</th>
+						<th>Yellow Cards</th>
+						<th>Red Cards</th>
+						<th>Possession %</th>
+						<th>Achieved Passes %</th>
+						<th>Aerial Duel Won</th>
+						<th>Rating</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="Actions2">
+			<h1>View the defense stats</h1>
+			<div>
+				<button onclick="showDefTable('http://localhost:5179/WeatherForecast/statsDefenseGeneral','genDefenseTable')">General Stats</button>
+				<button onclick="showDefTable('http://localhost:5179/WeatherForecast/statsDefenseDomicile','homeDefenseTable')">Home Stats</button>
+				<button onclick="showDefTable('http://localhost:5179/WeatherForecast/statsDefenseExterieur','awayDefenseTable')">Away Stats</button>
+			</div>
+		</div>
+		<div class="Results2">
+			<div id="genDefenseTable" class="hidden">
+				<h2>General Stats</h2>
+				<table>
+					<tr>
+						<th>Team</th>
+						<th>League</th>
+						<th>Shoots conceded per game</th>
+						<th>Tackles per game</th>
+						<th>Steals per game</th>
+						<th>Fouls per game</th>
+						<th>Offside per game</th>
+						<th>Rating</th>
+					</tr>
+				</table>
+			</div>
+			<div id="homeDefenseTable" class="hidden">
+				<h2>Home Stats</h2>
+				<table>
+					<tr>
+						<th>Team</th>
+						<th>League</th>
+						<th>Shoots conceded per game</th>
+						<th>Tackles per game</th>
+						<th>Steals per game</th>
+						<th>Fouls per game</th>
+						<th>Offside per game</th>
+						<th>Rating</th>
+					</tr>
+				</table>
+			</div>
+			<div id="awayDefenseTable" class="hidden">
+				<h2>Away Stats</h2>
+				<table>
+					<tr>
+						<th>Team</th>
+						<th>League</th>
+						<th>Shoots conceded per game</th>
+						<th>Tackles per game</th>
+						<th>Steals per game</th>
+						<th>Fouls per game</th>
+						<th>Offside per game</th>
+						<th>Rating</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="Actions3">
+			<h1>View the offense stats</h1>
+			<div>
+				<button onclick="showOffTable('http://localhost:5179/WeatherForecast/statsAttaqueGeneral','genOffenseTable')">General Stats</button>
+				<button onclick="showOffTable('http://localhost:5179/WeatherForecast/statsAttaqueDomicile','homeOffenseTable')">Home Stats</button>
+				<button onclick="showOffTable('http://localhost:5179/WeatherForecast/statsAttaqueExterieur','awayOffenseTable')">Away Stats</button>
+			</div>
+		</div>
+		<div class="Results3">
+			<div id="genOffenseTable" class="hidden">
+				<h2>General Stats</h2>
+				<table>
+					<tr>
+						<th>Team</th>
+						<th>League</th>
+						<th>Shoots per game</th>
+						<th>Shoots on target per game</th>
+						<th>Dribbles per game</th>
+						<th>Fouls conceded per game</th>
+						<th>Rating</th>
+					</tr>
+				</table>
+			</div>
+			<div id="homeOffenseTable" class="hidden">
+				<h2>Home Stats</h2>
+				<table>
+					<tr>
+						<th>Team</th>
+						<th>League</th>
+						<th>Shoots per game</th>
+						<th>Shoots on target per game</th>
+						<th>Dribbles per game</th>
+						<th>Fouls conceded per game</th>
+						<th>Rating</th>
+					</tr>
+				</table>
+			</div>
+			<div id="awayOffenseTable" class="hidden">
+				<h2>Away Stats</h2>
+				<table>
+					<tr>
+						<th>Team</th>
+						<th>League</th>
+						<th>Shoots per game</th>
+						<th>Shoots on target per game</th>
+						<th>Dribbles per game</th>
+						<th>Fouls conceded per game</th>
+						<th>Rating</th>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>© All rights reserved. Stats Sheet, 2023</p>
+	</footer>
+</body>
+</html>
