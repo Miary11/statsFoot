@@ -41,7 +41,7 @@ public class WeatherForecastController : ControllerBase
     {
         try
         {
-            string connectionString = "Host=localhost;Port=5432;Database=statsfoot;Username=statsfoot;Password=statsfoot;";
+            string connectionString = "Host=stats-foot-v2.ccyzxtomrtfw.us-east-1.rds.amazonaws.com;Port=5432;Database=statsfoot;Username=postgres;Password=statsfoot;";
             IDbConnection c = new NpgsqlConnection(connectionString);
             c.Open();
             using IDbCommand command = c.CreateCommand();
@@ -87,7 +87,7 @@ public class WeatherForecastController : ControllerBase
     {
         try
         {
-            string connectionString = "Host=localhost;Port=5432;Database=statsfoot;Username=statsfoot;Password=statsfoot;";
+            string connectionString = "Host=stats-foot-v2.ccyzxtomrtfw.us-east-1.rds.amazonaws.com;Port=5432;Database=statsfoot;Username=postgres;Password=statsfoot;";
             IDbConnection c = new NpgsqlConnection(connectionString);
             c.Open();
             using IDbCommand command = c.CreateCommand();
@@ -133,7 +133,7 @@ public class WeatherForecastController : ControllerBase
     {
         try
         {
-            string connectionString = "Host=localhost;Port=5432;Database=statsfoot;Username=statsfoot;Password=statsfoot;";
+            string connectionString = "Host=stats-foot-v2.ccyzxtomrtfw.us-east-1.rds.amazonaws.com;Port=5432;Database=statsfoot;Username=postgres;Password=statsfoot;";
             IDbConnection c = new NpgsqlConnection(connectionString);
             c.Open();
             using IDbCommand command = c.CreateCommand();
@@ -179,7 +179,7 @@ public class WeatherForecastController : ControllerBase
     {
         try
         {
-            string connectionString = "Host=localhost;Port=5432;Database=statsfoot;Username=statsfoot;Password=statsfoot;";
+            string connectionString = "Host=stats-foot-v2.ccyzxtomrtfw.us-east-1.rds.amazonaws.com;Port=5432;Database=statsfoot;Username=postgres;Password=statsfoot;";
             IDbConnection c = new NpgsqlConnection(connectionString);
             c.Open();
             using IDbCommand command = c.CreateCommand();
@@ -223,7 +223,7 @@ public class WeatherForecastController : ControllerBase
     {
         try
         {
-            string connectionString = "Host=localhost;Port=5432;Database=statsfoot;Username=statsfoot;Password=statsfoot;";
+            string connectionString = "Host=stats-foot-v2.ccyzxtomrtfw.us-east-1.rds.amazonaws.com;Port=5432;Database=statsfoot;Username=postgres;Password=statsfoot;";
             IDbConnection c = new NpgsqlConnection(connectionString);
             c.Open();
             using IDbCommand command = c.CreateCommand();
@@ -267,7 +267,7 @@ public class WeatherForecastController : ControllerBase
     {
         try
         {
-            string connectionString = "Host=localhost;Port=5432;Database=statsfoot;Username=statsfoot;Password=statsfoot;";
+            string connectionString = "Host=stats-foot-v2.ccyzxtomrtfw.us-east-1.rds.amazonaws.com;Port=5432;Database=statsfoot;Username=postgres;Password=statsfoot;";
             IDbConnection c = new NpgsqlConnection(connectionString);
             c.Open();
             using IDbCommand command = c.CreateCommand();
@@ -311,7 +311,7 @@ public class WeatherForecastController : ControllerBase
     {
         try
         {
-            string connectionString = "Host=localhost;Port=5432;Database=statsfoot;Username=statsfoot;Password=statsfoot;";
+            string connectionString = "Host=stats-foot-v2.ccyzxtomrtfw.us-east-1.rds.amazonaws.com;Port=5432;Database=statsfoot;Username=postgres;Password=statsfoot;";
             IDbConnection c = new NpgsqlConnection(connectionString);
             c.Open();
             using IDbCommand command = c.CreateCommand();
@@ -354,7 +354,7 @@ public class WeatherForecastController : ControllerBase
     {
         try
         {
-            string connectionString = "Host=localhost;Port=5432;Database=statsfoot;Username=statsfoot;Password=statsfoot;";
+            string connectionString = "Host=stats-foot-v2.ccyzxtomrtfw.us-east-1.rds.amazonaws.com;Port=5432;Database=statsfoot;Username=postgres;Password=statsfoot;";
             IDbConnection c = new NpgsqlConnection(connectionString);
             c.Open();
             using IDbCommand command = c.CreateCommand();
@@ -397,7 +397,7 @@ public class WeatherForecastController : ControllerBase
     {
         try
         {
-            string connectionString = "Host=localhost;Port=5432;Database=statsfoot;Username=statsfoot;Password=statsfoot;";
+            string connectionString = "Host=stats-foot-v2.ccyzxtomrtfw.us-east-1.rds.amazonaws.com;Port=5432;Database=statsfoot;Username=postgres;Password=statsfoot;";
             IDbConnection c = new NpgsqlConnection(connectionString);
             c.Open();
             using IDbCommand command = c.CreateCommand();
