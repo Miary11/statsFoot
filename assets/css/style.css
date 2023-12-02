@@ -80,6 +80,10 @@ main h1{
 	padding: 4px 4px 4px 4px;
 }
 
+#gengen{
+	margin-left: 1%;
+}
+
 .Actions2{
 	margin-top: 3%;
 	border: 0.5px solid white;
@@ -130,6 +134,10 @@ main h1{
 	width: 120px;
 }
 
+#gendef{
+	margin-left: 1%;
+}
+
 .Actions3{
 	margin-top: 3%;
 	border: 0.5px solid white;
@@ -178,6 +186,10 @@ main h1{
 
 .Results3 table tr td{
 	width: 120px;
+}
+
+#genoff{
+	margin-left: 8%;
 }
 
 footer{
