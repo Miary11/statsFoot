@@ -13,6 +13,6 @@ app.get('/statsAttaqueDomicile', statsController.getStatsAttaqueDomicile);
 app.get('/statsAttaqueExterieur', statsController.getStatsAttaqueExterieur);
 app.get('/statsAttaqueGeneral', statsController.getStatsAttaqueGeneral);
 
-app.listen(() => {
+app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

@@ -33,6 +33,8 @@ async function getStatsGeneral(req, res) {
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
+    res.header('Content-Type', 'application/json');
+
     res.status(200).json(allStatsGen);
   } catch (error) {
     // Log the exception details
@@ -62,6 +64,8 @@ async function getStatsGeneralDomicile(req, res) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+    res.header('Content-Type', 'application/json');
 
     res.status(200).json(allStatsGen);
   } catch (error) {
@@ -93,6 +97,8 @@ async function getStatsGeneralExterieur(req, res) {
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
+    res.header('Content-Type', 'application/json');
+
     res.status(200).json(allStatsGen);
   } catch (error) {
     // Log the exception details
@@ -120,6 +126,8 @@ async function getStatsDefenseDomicile(req, res) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+    res.header('Content-Type', 'application/json');
 
     res.status(200).json(allStatsGen);
   } catch (error) {
@@ -149,6 +157,8 @@ async function getStatsDefenseExterieur(req, res) {
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
+    res.header('Content-Type', 'application/json');
+
     res.status(200).json(allStatsGen);
   } catch (error) {
     // Log the exception details
@@ -177,6 +187,8 @@ async function getStatsDefenseGeneral(req, res) {
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
+    res.header('Content-Type', 'application/json');
+
     res.status(200).json(allStatsGen);
   } catch (error) {
     // Log the exception details
@@ -203,6 +215,8 @@ async function getStatsAttaqueDomicile(req, res) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+    res.header('Content-Type', 'application/json');
 
     res.status(200).json(allStatsGen);
   } catch (error) {
@@ -231,6 +245,8 @@ async function getStatsAttaqueExterieur(req, res) {
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
+    res.header('Content-Type', 'application/json');
+
     res.status(200).json(allStatsGen);
   } catch (error) {
     // Log the exception details
@@ -257,6 +273,8 @@ async function getStatsAttaqueGeneral(req, res) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+    res.header('Content-Type', 'application/json');
 
     res.status(200).json(allStatsGen);
   } catch (error) {
