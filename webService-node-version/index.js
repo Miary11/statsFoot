@@ -1,6 +1,7 @@
 const express = require('express');
 const statsController = require('./statsController');
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.get('/statsGeneral', statsController.getStatsGeneral);
 app.get('/statsGeneralDomicile', statsController.getStatsGeneralDomicile);
@@ -13,5 +14,5 @@ app.get('/statsAttaqueExterieur', statsController.getStatsAttaqueExterieur);
 app.get('/statsAttaqueGeneral', statsController.getStatsAttaqueGeneral);
 
 app.listen(() => {
-  console.log(`Server is running`);
+  console.log(`Server is running on port ${PORT}`);
 });
