@@ -27,16 +27,16 @@ function updateGenStatsTable(endpoint,divName) {
                     var cell = row.insertCell();
                     cell.innerHTML = value;
                 }
-                appendCell(item.equipe);
-                appendCell(item.ligue);
-                appendCell(item.buts);
-                appendCell(item.tirsMatch);
-                appendCell(item.cartonJaune);
-                appendCell(item.cartonRouge);
-                appendCell(item.possession);
-                appendCell(item.passesReussies);
-                appendCell(item.aerienGagne);
-                appendCell(item.note);
+                appendCell(item.Equipe);
+                appendCell(item.Ligue);
+                appendCell(item.Buts);
+                appendCell(item.TirsMatch);
+                appendCell(item.CartonJaune);
+                appendCell(item.CartonRouge);
+                appendCell(item.Possession);
+                appendCell(item.PassesReussies);
+                appendCell(item.AerienGagne);
+                appendCell(item.Note);
             });
             showTable(divName);
         })
@@ -67,14 +67,14 @@ function updateDefStatsTable(endpoint, divName) {
                     var cell = row.insertCell();
                     cell.innerHTML = value;
                 }
-                appendCell(item.equipe);
-                appendCell(item.ligue);
-                appendCell(item.tirsMatch);
-                appendCell(item.tacleMatch);
-                appendCell(item.interceptionMatch);
-                appendCell(item.fauteMatch);
-                appendCell(item.horsJeuMatch);
-                appendCell(item.note);
+                appendCell(item.Equipe);
+                appendCell(item.Ligue);
+                appendCell(item.TirsMatch);
+                appendCell(item.TacleMatch);
+                appendCell(item.InterceptionMatch);
+                appendCell(item.FauteMatch);
+                appendCell(item.HorsJeuMatch);
+                appendCell(item.Note);
             });
             showTable(divName);
         })
@@ -105,13 +105,13 @@ function updateOffStatsTable(endpoint, divName) {
                     var cell = row.insertCell();
                     cell.innerHTML = value;
                 }
-                appendCell(item.equipe);
-                appendCell(item.ligue);
-                appendCell(item.tirsMatch);
-                appendCell(item.tirsCadreMatch);
-                appendCell(item.dribbleMatch);
-                appendCell(item.fauteSubieMatch);
-                appendCell(item.note);
+                appendCell(item.Equipe);
+                appendCell(item.Ligue);
+                appendCell(item.TirsMatch);
+                appendCell(item.TirsCadreMatch);
+                appendCell(item.DribbleMatch);
+                appendCell(item.FauteSubieMatch);
+                appendCell(item.Note);
             });
             showTable(divName);
         })
