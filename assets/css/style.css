@@ -1,7 +1,12 @@
+@font-face {
+	font-family: Newake;
+	src: url('assets/fonts/Newake-Font-Demo.otf') format('opentype');
+}
+
 body{
 	background-color: black;
 	color: white;
-	font-family: Helvetica;
+	font-family: Helvetica, sans-serif;
 }
 
 header{
