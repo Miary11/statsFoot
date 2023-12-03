@@ -1,0 +1,11 @@
+{
+  "appId": "com.statsfoot.app",
+  "appName": "statsfoot",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
